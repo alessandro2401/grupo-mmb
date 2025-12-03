@@ -26,6 +26,13 @@ export default function Ecossistema() {
             {marcasEcossistema.map((marca) => (
               <Card key={marca.id} className="hover:shadow-lg transition-shadow">
                 <CardHeader>
+                  <div className="mb-4 h-24 flex items-center justify-center">
+                    <img 
+                      src={marca.logo} 
+                      alt={`Logo ${marca.nome}`}
+                      className="max-h-20 max-w-full object-contain"
+                    />
+                  </div>
                   <CardTitle className="text-2xl">{marca.nome}</CardTitle>
                   <CardDescription className="text-lg italic">
                     "{marca.slogan}"

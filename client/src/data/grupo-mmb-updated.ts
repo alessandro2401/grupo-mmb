@@ -7,7 +7,8 @@ export const marcasEcossistema = [
     slogan: "Proteção para todos os brasileiros",
     descricao: "Movimento de democratização de seguros com foco em inclusão, simplicidade e transparência. Processo 100% digital para múltiplos produtos (Auto, Residencial, Vida, Empresarial).",
     url: "https://movimentomaisseguro.com.br",
-    cor: "laranja"
+    cor: "laranja",
+    logo: "/logos/movimento-mais-seguro.svg"
   },
   {
     id: 2,
@@ -15,7 +16,8 @@ export const marcasEcossistema = [
     slogan: "Proteção sob medida, sem sair de casa",
     descricao: "Corretora tradicional com +10 anos de experiência, oferecendo atendimento personalizado e parcerias com as melhores seguradoras. Diversidade de produtos (Vida, Saúde, Auto, Empresarial).",
     url: "https://solucoescorretora.com",
-    cor: "laranja"
+    cor: "laranja",
+    logo: "/logos/solucoes-corretora.png"
   },
   {
     id: 3,
@@ -23,7 +25,8 @@ export const marcasEcossistema = [
     slogan: "Junte-se ao Movimento!",
     descricao: "Associação Civil de Socorro Mútuo legítima e transparente. Modelo de rateio com conformidade regulatória rigorosa. Carro reserva ilimitado e ressarcimento em até 7 dias.",
     url: "https://movimentomaisbrasil.org.br",
-    cor: "laranja"
+    cor: "laranja",
+    logo: "/logos/movimento-mais-brasil.png"
   },
   {
     id: 4,
@@ -31,7 +34,8 @@ export const marcasEcossistema = [
     slogan: "Realize seus sonhos",
     descricao: "Consórcios para imóveis, carros e motos. Planejamento financeiro sem juros abusivos, com parcelas flexíveis. Alternativa inteligente ao financiamento tradicional.",
     url: "https://potereconsorcio.com.br",
-    cor: "azul"
+    cor: "azul",
+    logo: "/logos/potere-consorcio.svg"
   },
   {
     id: 5,
@@ -39,7 +43,8 @@ export const marcasEcossistema = [
     slogan: "Seguro sem dor de cabeça",
     descricao: "Modelo inovador de seguro por assinatura mensal, sem anuidade ou fidelidade. Flexibilidade total para cancelar quando quiser + benefícios exclusivos em combustível.",
     url: "https://potereseguroauto.com.br",
-    cor: "azul"
+    cor: "azul",
+    logo: "/logos/potere.svg"
   },
   {
     id: 6,
@@ -47,7 +52,8 @@ export const marcasEcossistema = [
     slogan: "Faça parte do Moto Clube!",
     descricao: "Comunidade lifestyle para motociclistas. Proteção especializada para todos os modelos de motos + eventos, encontros e benefícios exclusivos. Mais seguro, é paixão compartilhada.",
     url: "https://maisbrasilmotorcycle.com.br",
-    cor: "azul"
+    cor: "azul",
+    logo: "/logos/mais-brasil-motorcycle.png"
   },
   {
     id: 7,
@@ -55,7 +61,8 @@ export const marcasEcossistema = [
     slogan: "Conversas que movem o mercado",
     descricao: "Plataforma de conteúdo e networking. Podcast com líderes e empreendedores, gerando insights valiosos sobre inovação, estratégia e crescimento de negócios.",
     url: "https://juntospodmais.com.br",
-    cor: "azul"
+    cor: "azul",
+    logo: "/logos/juntos-pod.svg"
   }
 ];
 

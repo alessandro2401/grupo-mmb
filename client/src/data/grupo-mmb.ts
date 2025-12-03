@@ -9,36 +9,43 @@ export const MARCAS = [
     nome: "Alpha Proteções",
     descricao: "Hub de vendas focado em soluções completas e personalizadas de proteção veicular e seguros.",
     url: "https://www.alphaprotecoes.com.br/",
+    logo: "/logos/alpha-protecoes.png"
   },
   {
     nome: "Movimento Mais Seguro",
     descricao: "Soluções de proteção veicular com foco em segurança e transparência para o associado.",
     url: "https://www.movimentomaisseguro.com.br/",
+    logo: "/logos/movimento-mais-seguro.svg"
   },
   {
     nome: "Potere BP Mensal",
     descricao: "Seguro auto e moto com pagamento mensal, flexibilidade e sem burocracia.",
     url: "https://www.poterebpmensal.com.br/",
+    logo: "/logos/potere.svg"
   },
   {
     nome: "Soluções Corretora",
     descricao: "Corretora especializada em seguros diversos, oferecendo consultoria e as melhores opções do mercado.",
     url: "https://www.solucoescorretora.com/",
+    logo: "/logos/solucoes-corretora.png"
   },
   {
     nome: "Mais Brasil Motorcycle",
     descricao: "Proteção especializada e dedicada para motocicletas, com cobertura e assistência 24h.",
     url: "https://www.maisbrasilmotorcycle.com.br/",
+    logo: "/logos/mais-brasil-motorcycle.png"
   },
   {
     nome: "Movimento Mais Brasil",
     descricao: "Associação de socorro mútuo com foco em proteção veicular e benefícios exclusivos.",
     url: "https://www.movimentomaisbrasil.org.br/",
+    logo: "/logos/movimento-mais-brasil.png"
   },
   {
     nome: "Juntos POD+",
     descricao: "Plataforma de benefícios e serviços adicionais para clientes e parceiros do ecossistema.",
     url: "https://www.juntospodmais.com.br/",
+    logo: "/logos/juntos-pod.svg"
   }
 ];
 

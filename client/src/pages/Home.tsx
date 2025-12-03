@@ -77,6 +77,13 @@ export default function Home() {
             {MARCAS.map((marca) => (
               <Card key={marca.nome} className="group hover:shadow-lg transition-all hover:-translate-y-1">
                 <CardContent className="p-6 space-y-3">
+                  <div className="h-16 flex items-center justify-center mb-3">
+                    <img 
+                      src={marca.logo} 
+                      alt={`Logo ${marca.nome}`}
+                      className="max-h-14 max-w-full object-contain"
+                    />
+                  </div>
                   <h3 className="text-xl font-bold group-hover:text-primary transition-colors">{marca.nome}</h3>
                   <p className="text-gray-600 text-sm">{marca.descricao}</p>
                   <a href={marca.url} target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-primary text-sm font-medium">

@@ -22,7 +22,11 @@ export default function Header() {
           {/* Logo */}
           <Link href="/">
             <div className="flex items-center gap-3 cursor-pointer">
-              <div className="text-2xl font-bold text-primary">GRUPO MMB</div>
+              <img 
+                src="/logos/grupo-mmb.png" 
+                alt="Grupo MMB" 
+                className="h-12 object-contain"
+              />
             </div>
           </Link>
 
