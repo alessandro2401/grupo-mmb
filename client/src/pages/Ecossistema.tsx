@@ -1,60 +1,57 @@
-import Header from "@/components/layout/Header";
-import Footer from "@/components/layout/Footer";
-import { MARCAS } from "@/data/grupo-mmb";
-import { Card, CardContent } from "@/components/ui/card";
-import { ExternalLink } from "lucide-react";
+import { marcasEcossistema } from "@/data/grupo-mmb-updated";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { ExternalLink } from "lucide-react";
 
 export default function Ecossistema() {
   return (
-    <div className="min-h-screen flex flex-col">
-      <Header />
-      <section className="pt-32 pb-20 gradient-hero text-white">
-        <div className="container text-center">
-          <h1 className="text-5xl font-bold mb-6">Nosso Ecossistema</h1>
-          <p className="text-xl text-white/90 max-w-3xl mx-auto">
-            7 marcas especializadas em proteção veicular, unidas por uma gestão administrativa de excelência
+    <div className="min-h-screen">
+      {/* Hero */}
+      <section className="bg-gradient-to-br from-primary to-secondary py-20">
+        <div className="container">
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
+            Ecossistema de Marcas
+          </h1>
+          <p className="text-xl text-white/90 max-w-3xl">
+            Sete marcas distintas, cada uma com sua essência e posicionamento único, 
+            todas comercializadas pela <strong>Alpha Proteções</strong> e administradas pelo <strong>Grupo MMB</strong>.
           </p>
         </div>
       </section>
 
+      {/* Marcas */}
       <section className="py-20">
         <div className="container">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {MARCAS.map((marca) => (
-              <Card key={marca.nome} className="group hover:shadow-xl transition-all hover:-translate-y-2">
-                <CardContent className="p-8 space-y-4">
-                  <h3 className="text-2xl font-bold text-gray-900 group-hover:text-primary transition-colors">
-                    {marca.nome}
-                  </h3>
-                  <p className="text-gray-600 leading-relaxed">{marca.descricao}</p>
-                  <a href={marca.url} target="_blank" rel="noopener noreferrer">
-                    <Button variant="outline" className="w-full group/btn">
-                      Visitar Site <ExternalLink className="ml-2 group-hover/btn:translate-x-1 transition-transform" size={16} />
-                    </Button>
-                  </a>
+            {marcasEcossistema.map((marca) => (
+              <Card key={marca.id} className="hover:shadow-lg transition-shadow">
+                <CardHeader>
+                  <CardTitle className="text-2xl">{marca.nome}</CardTitle>
+                  <CardDescription className="text-lg italic">
+                    "{marca.slogan}"
+                  </CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground mb-4">{marca.descricao}</p>
+                  <Button asChild variant="outline" className="w-full">
+                    <a href={marca.url} target="_blank" rel="noopener noreferrer">
+                      Visitar Site <ExternalLink className="ml-2 h-4 w-4" />
+                    </a>
+                  </Button>
                 </CardContent>
               </Card>
             ))}
           </div>
-        </div>
-      </section>
 
-      <section className="py-20 bg-gray-50">
-        <div className="container">
-          <div className="max-w-4xl mx-auto">
-            <img src="/images/ecosystem-network.png" alt="Ecossistema MMB" className="rounded-lg shadow-2xl" />
-            <div className="mt-12 text-center">
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">Um Ecossistema Integrado</h2>
-              <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                Todas as marcas compartilham a mesma infraestrutura administrativa, garantindo eficiência, 
-                transparência e qualidade no atendimento ao cliente.
-              </p>
-            </div>
+          {/* Nota Importante */}
+          <div className="mt-16 bg-gradient-to-r from-orange-500/10 to-blue-500/10 p-8 rounded-lg">
+            <p className="text-center text-lg font-semibold">
+              <span className="text-orange-600">Alpha Proteções</span> VENDE todas as marcas • 
+              <span className="text-blue-600"> Grupo MMB</span> ADMINISTRA o pós-venda de todas
+            </p>
           </div>
         </div>
       </section>
-      <Footer />
     </div>
   );
 }
