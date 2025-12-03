@@ -16,7 +16,7 @@ export default function Header() {
   ];
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-200">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-white shadow-md">
       <div className="container">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
