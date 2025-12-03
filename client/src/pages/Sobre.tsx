@@ -10,7 +10,7 @@ export default function Sobre() {
     <div className="min-h-screen flex flex-col">
       <Header />
       {/* Hero */}
-      <section className="bg-gradient-to-br from-primary to-secondary pt-32 pb-20">
+      <section className="gradient-hero pt-32 pb-20">
         <div className="container">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
             Sobre o Grupo MMB

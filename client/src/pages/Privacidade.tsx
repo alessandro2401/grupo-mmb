@@ -5,7 +5,7 @@ export default function Privacidade() {
   return (
     <div className="min-h-screen flex flex-col">
       <Header />
-      <section className="pt-32 pb-20 bg-gradient-to-br from-primary to-secondary text-white">
+      <section className="pt-32 pb-20 gradient-hero text-white">
         <div className="container">
           <h1 className="text-4xl md:text-5xl font-bold">Política de Privacidade</h1>
           <p className="text-xl text-white/90 mt-4">Última atualização: Janeiro de 2025</p>
