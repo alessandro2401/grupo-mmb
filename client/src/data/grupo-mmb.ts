@@ -138,7 +138,7 @@ export const VALORES = [
 
 // Informações de Contato
 export const CONTATO = {
-  endereco: "Goiânia - GO",
+  endereco: "Goiânia, Goiás - Brasil",
   telefone: "0800 604 8006",
   whatsapp: "5508006048006",
   email: "contato@grupommb.com",

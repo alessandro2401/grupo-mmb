@@ -32,9 +32,9 @@ export default function Footer() {
               {linksSite.map((link) => (
                 <li key={link.href}>
                   <Link href={link.href}>
-                    <a className="text-white/80 hover:text-white transition-colors text-sm">
+                    <span className="text-white/80 hover:text-white transition-colors text-sm cursor-pointer">
                       {link.label}
-                    </a>
+                    </span>
                   </Link>
                 </li>
               ))}
@@ -45,7 +45,7 @@ export default function Footer() {
           <div>
             <h4 className="text-lg font-semibold mb-4">Nossas Marcas</h4>
             <ul className="space-y-2">
-              {MARCAS.slice(0, 5).map((marca) => (
+              {MARCAS.map((marca) => (
                 <li key={marca.url}>
                   <a
                     href={marca.url}
@@ -92,10 +92,10 @@ export default function Footer() {
             <p>© 2025 Grupo MMB. Todos os direitos reservados.</p>
             <div className="flex gap-6">
               <Link href="/privacidade">
-                <a className="hover:text-white transition-colors">Política de Privacidade</a>
+                <span className="hover:text-white transition-colors cursor-pointer">Política de Privacidade</span>
               </Link>
               <Link href="/termos">
-                <a className="hover:text-white transition-colors">Termos de Uso</a>
+                <span className="hover:text-white transition-colors cursor-pointer">Termos de Uso</span>
               </Link>
             </div>
           </div>

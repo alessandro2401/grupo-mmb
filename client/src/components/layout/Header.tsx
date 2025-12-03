@@ -34,9 +34,9 @@ export default function Header() {
           <nav className="hidden lg:flex items-center gap-8">
             {navItems.map((item) => (
               <Link key={item.href} href={item.href}>
-                <a className="text-gray-700 hover:text-primary transition-colors font-medium">
+                <span className="text-gray-700 hover:text-primary transition-colors font-medium cursor-pointer">
                   {item.label}
-                </a>
+                </span>
               </Link>
             ))}
           </nav>
@@ -65,12 +65,12 @@ export default function Header() {
             <nav className="flex flex-col gap-4">
               {navItems.map((item) => (
                 <Link key={item.href} href={item.href}>
-                  <a
-                    className="text-gray-700 hover:text-primary transition-colors font-medium"
+                  <span
+                    className="text-gray-700 hover:text-primary transition-colors font-medium cursor-pointer"
                     onClick={() => setMobileMenuOpen(false)}
                   >
                     {item.label}
-                  </a>
+                  </span>
                 </Link>
               ))}
               <Link href="/pos-venda">
