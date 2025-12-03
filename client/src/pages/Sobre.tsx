@@ -1,4 +1,5 @@
 import { VALORES } from "@/data/grupo-mmb";
+import { fluxoTrabalho, resultadosEsperados } from "@/data/grupo-mmb-updated";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { CheckCircle2 } from "lucide-react";
 import Header from "@/components/layout/Header";
