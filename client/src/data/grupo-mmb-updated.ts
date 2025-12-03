@@ -64,19 +64,19 @@ export const pilaresTecnologia = [
     id: 1,
     titulo: "Agilidade em Inovação",
     descricao: "Proximidade entre T.I. e equipes de vendas/marketing permite desenvolvimento rápido de ferramentas comerciais, automações de vendas e dashboards de performance em tempo real.",
-    icone: "⚡"
+    icone: "Zap"
   },
   {
     id: 2,
     titulo: "Otimização de Conversão",
     descricao: "Business Intelligence integrado ao comercial possibilita análise preditiva de leads, personalização de ofertas e aumento da taxa de conversão através de dados.",
-    icone: "📊"
+    icone: "BarChart3"
   },
   {
     id: 3,
     titulo: "Diferenciação Competitiva",
     descricao: "Tecnologia proprietária desenvolvida para suportar vendas (CRM customizado, automação de cotações, integração com canais digitais) torna-se vantagem competitiva no mercado.",
-    icone: "🚀"
+    icone: "Rocket"
   }
 ];
 

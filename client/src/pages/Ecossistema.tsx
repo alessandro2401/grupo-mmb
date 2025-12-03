@@ -33,7 +33,7 @@ export default function Ecossistema() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground mb-4">{marca.descricao}</p>
-                  <Button asChild variant="outline" className="w-full">
+                  <Button asChild variant="default" className="w-full">
                     <a href={marca.url} target="_blank" rel="noopener noreferrer">
                       Visitar Site <ExternalLink className="ml-2 h-4 w-4" />
                     </a>

@@ -1,5 +1,6 @@
 import { pilaresTecnologia } from "@/data/grupo-mmb-updated";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Wallet, Target, Laptop, Zap, BarChart3, Rocket, Lightbulb } from "lucide-react";
 
 export default function Plataforma() {
   return (
@@ -23,7 +24,9 @@ export default function Plataforma() {
           <div className="grid md:grid-cols-3 gap-8 mb-16">
             <Card>
               <CardHeader>
-                <div className="text-4xl mb-4">💰</div>
+                <div className="mb-4">
+                  <Wallet className="w-12 h-12 text-primary" />
+                </div>
                 <CardTitle>FinOps</CardTitle>
                 <CardDescription>Gestão Financeira</CardDescription>
               </CardHeader>
@@ -37,7 +40,9 @@ export default function Plataforma() {
 
             <Card>
               <CardHeader>
-                <div className="text-4xl mb-4">🎯</div>
+                <div className="mb-4">
+                  <Target className="w-12 h-12 text-primary" />
+                </div>
                 <CardTitle>Ops</CardTitle>
                 <CardDescription>Operações</CardDescription>
               </CardHeader>
@@ -51,7 +56,9 @@ export default function Plataforma() {
 
             <Card>
               <CardHeader>
-                <div className="text-4xl mb-4">💻</div>
+                <div className="mb-4">
+                  <Laptop className="w-12 h-12 text-primary" />
+                </div>
                 <CardTitle>Tech</CardTitle>
                 <CardDescription>Tecnologia</CardDescription>
               </CardHeader>
@@ -74,10 +81,14 @@ export default function Plataforma() {
             </p>
 
             <div className="grid md:grid-cols-3 gap-8">
-              {pilaresTecnologia.map((pilar, index) => (
+              {pilaresTecnologia.map((pilar, index) => {
+                const IconComponent = pilar.icone === "Zap" ? Zap : pilar.icone === "BarChart3" ? BarChart3 : Rocket;
+                return (
                 <Card key={pilar.id} className="border-2">
                   <CardHeader>
-                    <div className="text-5xl mb-4">{pilar.icone}</div>
+                    <div className="mb-4">
+                      <IconComponent className="w-14 h-14 text-primary" />
+                    </div>
                     <CardTitle className="text-xl">
                       Pilar {String(index + 1).padStart(2, "0")}
                     </CardTitle>
@@ -89,12 +100,14 @@ export default function Plataforma() {
                     <p className="text-muted-foreground">{pilar.descricao}</p>
                   </CardContent>
                 </Card>
-              ))}
+              );
+              })}
             </div>
 
             <div className="mt-12 bg-blue-500/10 p-6 rounded-lg">
-              <p className="text-center font-semibold">
-                💡 <strong>IMPORTANTE:</strong> A T.I. desenvolve sistemas utilizados por ambos os hubs, 
+              <p className="text-center font-semibold flex items-center justify-center gap-2">
+                <Lightbulb className="w-5 h-5 text-yellow-500" />
+                <strong>IMPORTANTE:</strong> A T.I. desenvolve sistemas utilizados por ambos os hubs, 
                 mas sua gestão estratégica está alinhada aos objetivos comerciais de crescimento e inovação.
               </p>
             </div>
