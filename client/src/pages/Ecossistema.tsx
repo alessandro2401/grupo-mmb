@@ -2,12 +2,15 @@ import { marcasEcossistema } from "@/data/grupo-mmb-updated";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ExternalLink } from "lucide-react";
+import Header from "@/components/layout/Header";
+import Footer from "@/components/layout/Footer";
 
 export default function Ecossistema() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen flex flex-col">
+      <Header />
       {/* Hero */}
-      <section className="bg-gradient-to-br from-primary to-secondary py-20">
+      <section className="bg-gradient-to-br from-primary to-secondary pt-32 pb-20">
         <div className="container">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
             Ecossistema de Marcas
@@ -59,6 +62,7 @@ export default function Ecossistema() {
           </div>
         </div>
       </section>
+      <Footer />
     </div>
   );
 }

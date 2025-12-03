@@ -1,12 +1,15 @@
-import { fluxoTrabalho, resultadosEsperados } from "@/data/grupo-mmb-updated";
+import { VALORES } from "@/data/grupo-mmb";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { CheckCircle2 } from "lucide-react";
+import Header from "@/components/layout/Header";
+import Footer from "@/components/layout/Footer";
 
 export default function Sobre() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen flex flex-col">
+      <Header />
       {/* Hero */}
-      <section className="bg-gradient-to-br from-primary to-secondary py-20">
+      <section className="bg-gradient-to-br from-primary to-secondary pt-32 pb-20">
         <div className="container">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
             Sobre o Grupo MMB
@@ -201,6 +204,7 @@ export default function Sobre() {
           </div>
         </div>
       </section>
+      <Footer />
     </div>
   );
 }
