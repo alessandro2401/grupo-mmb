@@ -216,7 +216,10 @@ export default function Sobre() {
                 href="/GRUPOMMB_Apresentacao_Institucional_v2.pdf" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-primary text-white px-8 py-3 rounded-lg font-semibold hover:bg-primary/90 transition-colors"
+                className="inline-flex items-center gap-2 px-8 py-3 rounded-lg font-semibold transition-colors"
+                style={{ backgroundColor: '#001D3F', color: '#FFFFFF' }}
+                onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#274A78'}
+                onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#001D3F'}
               >
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <rect width="18" height="18" x="3" y="3" rx="2"/>
