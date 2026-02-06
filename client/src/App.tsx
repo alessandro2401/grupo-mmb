@@ -12,6 +12,10 @@ import Sobre from "./pages/Sobre";
 import Contato from "./pages/Contato";
 import Privacidade from "./pages/Privacidade";
 import Termos from "./pages/Termos";
+import VisaoExecutiva from "./pages/VisaoExecutiva";
+import Arquitetura from "./pages/Arquitetura";
+import Governanca from "./pages/Governanca";
+import ModeloEconomico from "./pages/ModeloEconomico";
 
 function Router() {
   return (
@@ -22,6 +26,10 @@ function Router() {
       <Route path={"/pos-venda"} component={PosVenda} />
       <Route path={"/sobre"} component={Sobre} />
       <Route path={"/contato"} component={Contato} />
+      <Route path={"/visao-executiva"} component={VisaoExecutiva} />
+      <Route path={"/arquitetura"} component={Arquitetura} />
+      <Route path={"/governanca"} component={Governanca} />
+      <Route path={"/modelo-economico"} component={ModeloEconomico} />
       <Route path={"/privacidade"} component={Privacidade} />
       <Route path={"/termos"} component={Termos} />
       <Route path={"/404"} component={NotFound} />

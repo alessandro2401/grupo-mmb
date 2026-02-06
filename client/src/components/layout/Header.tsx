@@ -8,9 +8,11 @@ export default function Header() {
 
   const navItems = [
     { label: "Início", href: "/" },
-    { label: "Plataforma", href: "/plataforma" },
+    { label: "Visão Executiva", href: "/visao-executiva" },
+    { label: "Arquitetura", href: "/arquitetura" },
     { label: "Ecossistema", href: "/ecossistema" },
-    { label: "Pós-Venda", href: "/pos-venda" },
+    { label: "Governança", href: "/governanca" },
+    { label: "Modelo Econômico", href: "/modelo-economico" },
     { label: "Sobre", href: "/sobre" },
     { label: "Contato", href: "/contato" },
   ];
