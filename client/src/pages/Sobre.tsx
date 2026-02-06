@@ -203,6 +203,35 @@ export default function Sobre() {
               a solidez administrativa do <span className="text-blue-600 font-semibold">Grupo MMB</span>.
             </p>
           </div>
+
+          {/* Apresentação Institucional */}
+          <div className="mt-12 text-center">
+            <div className="bg-white border-2 border-primary/20 p-8 rounded-lg shadow-sm">
+              <h3 className="text-2xl font-bold mb-4">Apresentação Institucional Completa</h3>
+              <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
+                Acesse nossa apresentação institucional detalhada com 17 slides, incluindo visão executiva, 
+                arquitetura organizacional, modelo econômico, indicadores de crescimento e glossário técnico.
+              </p>
+              <a 
+                href="manus-slides://FwOvsx01keuad84UaN9GIX" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 bg-primary text-white px-8 py-3 rounded-lg font-semibold hover:bg-primary/90 transition-colors"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <rect width="18" height="18" x="3" y="3" rx="2"/>
+                  <path d="M7 3v18"/>
+                  <path d="M3 7.5h4"/>
+                  <path d="M3 12h18"/>
+                  <path d="M3 16.5h4"/>
+                  <path d="M17 3v18"/>
+                  <path d="M17 7.5h4"/>
+                  <path d="M17 16.5h4"/>
+                </svg>
+                Ver Apresentação Completa
+              </a>
+            </div>
+          </div>
         </div>
       </section>
       <Footer />
