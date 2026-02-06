@@ -213,7 +213,7 @@ export default function Sobre() {
                 arquitetura organizacional, modelo econômico, indicadores de crescimento e glossário técnico.
               </p>
               <a 
-                href="manus-slides://FwOvsx01keuad84UaN9GIX" 
+                href="/GRUPOMMB_Apresentacao_Institucional.pdf" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-primary text-white px-8 py-3 rounded-lg font-semibold hover:bg-primary/90 transition-colors"
