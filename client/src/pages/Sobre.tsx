@@ -204,19 +204,20 @@ export default function Sobre() {
             </p>
           </div>
 
-          {/* Apresentação Institucional */}
-          <div className="mt-12 text-center">
+          {/* Material Institucional */}
+          <div className="mt-12 grid md:grid-cols-2 gap-6">
+            {/* Apresentação Institucional */}
             <div className="bg-white border-2 border-primary/20 p-8 rounded-lg shadow-sm">
-              <h3 className="text-2xl font-bold mb-4">Apresentação Institucional Completa</h3>
-              <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-                Acesse nossa apresentação institucional detalhada com 17 slides, incluindo visão executiva, 
-                arquitetura organizacional, modelo econômico, indicadores de crescimento e glossário técnico.
+              <h3 className="text-2xl font-bold mb-4">Apresentação Institucional</h3>
+              <p className="text-muted-foreground mb-6">
+                Apresentação visual com 17 slides incluindo visão executiva, arquitetura organizacional, 
+                modelo econômico, indicadores e glossário técnico.
               </p>
               <a 
                 href="/GRUPOMMB_Apresentacao_Institucional_v2.pdf" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-8 py-3 rounded-lg font-semibold transition-colors"
+                className="inline-flex items-center gap-2 px-6 py-3 rounded-lg font-semibold transition-colors w-full justify-center"
                 style={{ backgroundColor: '#001D3F', color: '#FFFFFF' }}
                 onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#274A78'}
                 onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#001D3F'}
@@ -231,7 +232,32 @@ export default function Sobre() {
                   <path d="M17 7.5h4"/>
                   <path d="M17 16.5h4"/>
                 </svg>
-                Ver Apresentação Completa
+                Ver Apresentação (PDF)
+              </a>
+            </div>
+
+            {/* Documento Institucional */}
+            <div className="bg-white border-2 border-primary/20 p-8 rounded-lg shadow-sm">
+              <h3 className="text-2xl font-bold mb-4">Documento Institucional</h3>
+              <p className="text-muted-foreground mb-6">
+                Documento textual completo detalhando estruturação operacional, racional estratégico, 
+                modelo de dois hubs e unidades de negócio.
+              </p>
+              <a 
+                href="/documento-institucional" 
+                className="inline-flex items-center gap-2 px-6 py-3 rounded-lg font-semibold transition-colors w-full justify-center"
+                style={{ backgroundColor: '#274A78', color: '#FFFFFF' }}
+                onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#001D3F'}
+                onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#274A78'}
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                  <polyline points="14 2 14 8 20 8"/>
+                  <line x1="16" y1="13" x2="8" y2="13"/>
+                  <line x1="16" y1="17" x2="8" y2="17"/>
+                  <polyline points="10 9 9 9 8 9"/>
+                </svg>
+                Ler Documento Completo
               </a>
             </div>
           </div>
