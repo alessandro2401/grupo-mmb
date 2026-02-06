@@ -213,27 +213,44 @@ export default function Sobre() {
                 Apresentação visual com 17 slides incluindo visão executiva, arquitetura organizacional, 
                 modelo econômico, indicadores e glossário técnico.
               </p>
-              <a 
-                href="/GRUPOMMB_Apresentacao_Institucional_v2.pdf" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-6 py-3 rounded-lg font-semibold transition-colors w-full justify-center"
-                style={{ backgroundColor: '#001D3F', color: '#FFFFFF' }}
-                onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#274A78'}
-                onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#001D3F'}
-              >
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <rect width="18" height="18" x="3" y="3" rx="2"/>
-                  <path d="M7 3v18"/>
-                  <path d="M3 7.5h4"/>
-                  <path d="M3 12h18"/>
-                  <path d="M3 16.5h4"/>
-                  <path d="M17 3v18"/>
-                  <path d="M17 7.5h4"/>
-                  <path d="M17 16.5h4"/>
-                </svg>
-                Ver Apresentação (PDF)
-              </a>
+              <div className="flex flex-col gap-3">
+                <a 
+                  href="/GRUPOMMB_Apresentacao_Institucional_v2.pdf" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-6 py-3 rounded-lg font-semibold transition-colors w-full justify-center"
+                  style={{ backgroundColor: '#001D3F', color: '#FFFFFF' }}
+                  onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#274A78'}
+                  onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#001D3F'}
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <rect width="18" height="18" x="3" y="3" rx="2"/>
+                    <path d="M7 3v18"/>
+                    <path d="M3 7.5h4"/>
+                    <path d="M3 12h18"/>
+                    <path d="M3 16.5h4"/>
+                    <path d="M17 3v18"/>
+                    <path d="M17 7.5h4"/>
+                    <path d="M17 16.5h4"/>
+                  </svg>
+                  Ver Apresentação (PDF)
+                </a>
+                <a 
+                  href="/GRUPOMMB_Apresentacao_Institucional.pptx" 
+                  download
+                  className="inline-flex items-center gap-2 px-6 py-3 rounded-lg font-semibold transition-colors w-full justify-center border-2"
+                  style={{ backgroundColor: 'transparent', color: '#001D3F', borderColor: '#001D3F' }}
+                  onMouseEnter={(e) => { e.currentTarget.style.backgroundColor = '#001D3F'; e.currentTarget.style.color = '#FFFFFF'; }}
+                  onMouseLeave={(e) => { e.currentTarget.style.backgroundColor = 'transparent'; e.currentTarget.style.color = '#001D3F'; }}
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                    <polyline points="7 10 12 15 17 10"/>
+                    <line x1="12" y1="15" x2="12" y2="3"/>
+                  </svg>
+                  Baixar PowerPoint (PPTX)
+                </a>
+              </div>
             </div>
 
             {/* Documento Institucional */}
