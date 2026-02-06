@@ -16,6 +16,7 @@ import VisaoExecutiva from "./pages/VisaoExecutiva";
 import Arquitetura from "./pages/Arquitetura";
 import Governanca from "./pages/Governanca";
 import ModeloEconomico from "./pages/ModeloEconomico";
+import Apresentacao from "./pages/Apresentacao";
 
 function Router() {
   return (
@@ -30,6 +31,7 @@ function Router() {
       <Route path={"/arquitetura"} component={Arquitetura} />
       <Route path={"/governanca"} component={Governanca} />
       <Route path={"/modelo-economico"} component={ModeloEconomico} />
+      <Route path={"/apresentacao"} component={Apresentacao} />
       <Route path={"/privacidade"} component={Privacidade} />
       <Route path={"/termos"} component={Termos} />
       <Route path={"/404"} component={NotFound} />
